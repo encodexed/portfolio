@@ -11,6 +11,16 @@ Ever since 2008, I have been teaching young musicians how to read, write and pla
 
 Outside of work, I like to play video games with friends, work on my own projects, play the piano or spend time with my birds.
 
+<!--  -->
+
+I was a private music educator, with a passion for writing my own music and playing the piano. I grew up playing many instruments and decided that would be the path my life takes.
+
+That was before I discovered programming.
+
+I fell instantly in love with Javascript and have been learning a variety of different technologies for the web ever since 2022. I love how creative I can be with code and the remarkable places it can take us.
+
+In my free time, I like to play games on my computer, play with my birds or have a hit of tennis.
+
 ## Projects
 
 ### Elder Scrolls Online Alchemy app
