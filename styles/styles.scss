@@ -4,7 +4,6 @@
 	margin: 0;
 	color: base.$brand-col1;
 	font-family: "Proza Libre", sans-serif;
-	font-weight: 400;
 }
 
 body {
@@ -14,6 +13,17 @@ body {
 p {
 	line-height: 1.8;
 	margin-bottom: base.$para-margins;
+	font-size: 14px;
+}
+
+h1 {
+	font-size: base.$h1-size;
+	font-weight: bold;
+	margin-bottom: base.$title-margins;
+
+	@media screen and (max-width: 768px) {
+		text-align: center;
+	}
 }
 
 h2 {
@@ -215,6 +225,10 @@ nav {
 		& > div:nth-child(3) {
 			margin-right: 0px;
 		}
+
+		&__highlighted-skills {
+			line-height: 2;
+		}
 	}
 }
 
@@ -304,6 +318,12 @@ nav {
 
 		&__eso {
 			width: auto;
+
+			&__headings {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
 		}
 
 		&__gallery img {
@@ -328,24 +348,40 @@ nav {
 	}
 
 	&__container {
+		display: flex;
+		justify-content: center;
 		margin-left: base.$side-gutter;
 		margin-right: base.$side-gutter;
 		max-width: base.$content-max-width;
 		width: 100%;
+
+		& p {
+			margin-bottom: 5px;
+		}
 	}
 
-	&__links {
-		font-size: 24px;
+	&__form {
+		max-width: 300px;
+		margin-bottom: base.$para-margins;
 
-		& ul {
-			margin-top: base.$para-margins;
-			list-style-type: none;
-			padding-left: 0px;
+		& div {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 4px;
 
-			& li {
-				font-weight: bold;
+			& input {
+				width: 70%;
 			}
 		}
+
+		& textarea {
+			width: 98%;
+		}
+	}
+
+	&__links ul {
+		list-style-type: none;
+		padding: 0;
 	}
 }
 
@@ -354,10 +390,6 @@ nav {
 		&__container {
 			margin-left: base.$side-gutter-sm;
 			margin-right: base.$side-gutter-sm;
-		}
-
-		&__links {
-			font-size: 18px;
 		}
 	}
 }

@@ -2,7 +2,6 @@
   margin: 0;
   color: #f0f2f2;
   font-family: "Proza Libre", sans-serif;
-  font-weight: 400;
 }
 
 body {
@@ -12,10 +11,22 @@ body {
 p {
   line-height: 1.8;
   margin-bottom: 30px;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    text-align: center;
+  }
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: bold;
   margin-bottom: 30px;
 }
@@ -26,7 +37,7 @@ h2 {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
   font-style: italic;
   margin-bottom: 30px;
@@ -187,6 +198,9 @@ nav {
 .skills__cards > div:nth-child(3) {
   margin-right: 0px;
 }
+.skills__cards__highlighted-skills {
+  line-height: 2;
+}
 
 @media screen and (max-width: 992px) {
   .skills__container {
@@ -258,6 +272,11 @@ nav {
   .projects__eso {
     width: auto;
   }
+  .projects__eso__headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .projects__gallery img {
     margin-right: 0px;
   }
@@ -275,30 +294,40 @@ nav {
   color: #1a2e40;
 }
 .contact__container {
+  display: flex;
+  justify-content: center;
   margin-left: 75px;
   margin-right: 75px;
   max-width: 1200px;
   width: 100%;
 }
-.contact__links {
-  font-size: 24px;
+.contact__container p {
+  margin-bottom: 5px;
+}
+.contact__form {
+  max-width: 300px;
+  margin-bottom: 30px;
+}
+.contact__form div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+.contact__form div input {
+  width: 70%;
+}
+.contact__form textarea {
+  width: 98%;
 }
 .contact__links ul {
-  margin-top: 30px;
   list-style-type: none;
-  padding-left: 0px;
-}
-.contact__links ul li {
-  font-weight: bold;
+  padding: 0;
 }
 
 @media screen and (max-width: 768px) {
   .contact__container {
     margin-left: 10%;
     margin-right: 10%;
-  }
-  .contact__links {
-    font-size: 18px;
   }
 }
 
