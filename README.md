@@ -1,3 +1,5 @@
+_**Please note that this portfolio repository is not that of the currently live portfolio, which you can find [here](https://github.com/encodexed/alakaslam-portfolio).**_
+
 # Portfolio
 
 Hello there, this is my portfolio page's repository. You can view the code behind the site and check its history.
